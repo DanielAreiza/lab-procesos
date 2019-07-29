@@ -1,17 +1,5 @@
-# PRÁCTICA 1 - PROCESOS #
-
-## 1. Objetivos ##
-1. Familiarizarse con las diferentes estructuras y funciones relacionadas con el manejo de procesos en linux.
-2. Codificar programas que hagan uso del API de procesos.
-
-## 2. Actividades previas al laboratorio ##
-
-Asignadas en la práctica anterior.
-Leer el capítulo 5 del libro guía y comprender las diapositivas de clase asociadas a este capitulo.
-
-## 3. Actividades en el laboratorio ##
-
-Realizar los siguientes ejercicios:
+Daniel Fernando Areiza Agudelo
+Carlos Mario Herrera Acevedo
 
 1. Escriba un programa que llame un ```fork()```. Antes del llamado del ```fork()```, declare una variable de acceso (por ejemplo, ```x```) y asígnele un valor (por ejemplo, ```100```). Responda las siguientes preguntas:
   * ¿Cuál es el valor de la variable en el proceso hijo?
@@ -44,8 +32,3 @@ R/Esto podria ser util cuando se requiere que el padre continue solo despues de 
 
 7. Escriba un programa que cree un proceso hijo y entonces en el proceso hijo cierre la salida estandar (```STDOUT FILENO```). ¿Qué pasa si el hijo llama ```printf()``` para imprimir alguna salida después de cerrar el descriptor?
 R/. En este caso l hijo no imprimira puesto que al realizar el cierre de la salida estandar con la funcion fclose(stdout), ya no es posible usar printf() para mostrar mensajes en la consola.
-
-8. Escriba un programa que cree dos hijos y conecte la salida estándar de un hijo a la entrada estándar del otro usando la llamada a sistema ```pipe()```
-
-## 4. Para la próxima sesión de laboratorio ##
-1. **Entregable**: Pendiente.

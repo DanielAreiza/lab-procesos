@@ -10,7 +10,7 @@ int i, A, B;
 int main() 
 {      
     // if file does not have in directory  
-    // then file foo.txt is created. 
+    // then file PRUEBA.txt is created. 
     int fd = open("PRUEBA.txt", O_WRONLY | O_RDONLY | O_CREAT);  
       
     printf("fd = %d/n", fd); 
@@ -35,10 +35,7 @@ int main()
 
      for(i = 0; i < x; i++) {
        sleep(1);
-       
        A = write(fd, "Hello hijo\n",strlen("Hello hijo\n" ));
-
-
        printf("Ingreso de hijo a fd: %d\n", fd);
      
      }
