@@ -36,6 +36,6 @@ int main (void){
    }
    // Codijo ejecutado por ambos (para el caso)
    printf("%c -> i = %d\n",rol ,i);
-   printf("analizando proceso %d\n", getpid());
+   printf("Finalizando proceso %d\n", getpid());
    return 0;
 }
